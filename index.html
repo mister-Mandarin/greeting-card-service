@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <title>Поздравительные открытки</title>
 </head>
 
-<body class="body">
+<body class="body-gift">
     <header class="header">
         <div class="header-container">
-            <img class="header-logo" src="img/logo.svg" alt="My Gift" width="180px" height="48px">
+            <img class="header-logo" src="img/logo.svg" alt="My Gift">
         </div>
     </header>
     <main class="main">
         <section class="main-gift">
             <div class="gift-container">
-                <h1>Поздравьте близкого человека с праздником!</h1>
+                <h1 class="main-head">Поздравьте близкого человека с праздником!</h1>
                 <p class="gift-descriorion">Выберите открытку и получатель получит ее на свой телефон</p>
 
                 <div class="gift-wpapper">
+                    
                     <div class="gift-cards">
+
                         <div class="swiper gift-swiper gift-swiper-card">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide gift-cards-slide">
@@ -44,8 +44,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper">
-                            <div class="swiper-wrapper gift-swiper-thumb">
+                        <div thumbsSlider="" class="swiper gift-swiper-thumb">
+                            <div class="swiper-wrapper">
                                 <div class="swiper-slide gift-cards-thumb">
                                     <img class="gift-cards-image" src="img/card-01.png" alt="card-01">
                                 </div>
@@ -85,7 +85,8 @@
                         </label>
                         <label class="form-label form-label-textarea">
                             <span class="form-text">поздравительный текст</span>
-                            <textarea class="form-field form-field-textarea" name="message" placeholder="Напишите теплые слова"></textarea>
+                            <textarea class="form-field form-field-textarea" name="message"
+                                placeholder="Напишите теплые слова"></textarea>
                         </label>
 
                         <button type="submit" class="form-button" disabled>Отправить</button>
@@ -96,5 +97,7 @@
         </section>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/script.js"></script>
 
 </html>

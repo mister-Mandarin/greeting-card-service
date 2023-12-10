@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+    /* Используется в случае, когда важна не скорость отрисовки, а удобочитаемость текста и визуальная красота сочетаний символов. */
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #221F1F;
+
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.body-gift {
+    background: rgb(151, 255, 170);
+    background: linear-gradient(90deg, rgba(151, 255, 170, 1) 0%, rgba(145, 176, 255, 1) 100%);
+}
+
+.body-card {
+    background: rgb(255, 178, 208);
+    background: linear-gradient(90deg, rgba(255, 178, 208, 1) 0%, rgba(249, 201, 119, 1) 100%);
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.header-logo {
+    display: block;
+    width: 180px;
+    height: auto;
+}
+
+.main {
+    padding: 20px 0 75px;
+}
+
+.main-gift {}
+
+.gift-container {}
+
+.main-head {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+
+.gift-descriorion {
+    font-size: 20px;
+    margin: 0 0 50px;
+}
+
+.gift-wpapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+.gift-cards {
+    max-width: 580px;
+}
+
+.gift-swiper {}
+
+.gift-swiper-card {
+    margin-bottom: 20px;
+}
+
+/* обертка для контейреа картинки */
+.gift-cards-slide {
+    border-radius: 20px;
+    border: 2px solid #4BAA00;
+    /* так как картинка вылазила за пределы контейнера, а стили слайдера изменять нельзя
+то  */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.gift-cards-image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.gift-swiper-thumb {}
+
+.gift-cards-thumb {
+    overflow: hidden;
+    width: 72px;
+    border-radius: 10px;
+}
+
+.gift-form {
+    max-width: 480px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: start;
+}
+
+.form-label {
+    width: 100%;
+}
+
+.form-text {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-field {
+    width: 100%;
+    font: inherit;
+    border-radius: 6px;
+    border: 1px solid #DEDEDE;
+    background-color: #FBFBFB;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.form-field:hover,
+.form-field:focus-visible,
+.form-field:active {
+    border-color: #999;
+}
+
+.form-label-textarea {
+    grid-column: 1/ -1;
+}
+
+.form-field-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-button {
+    padding: 8px 24px;
+    border-radius: 32px;
+    background-color: #4BAA00;
+    color: #FFF;
+    font-weight: 700;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.form-button:hover:not(:disabled) {
+    background-color: #58C601;
+}
+
+.form-button:focus-visible {
+    border-color: #58C601;
+}
+
+.form-button:active:not(:disabled) {
+    transform: translate(2px, 2px)
+}
+
+.form-button:disabled {
+    opacity: 0.4;
+}

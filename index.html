@@ -21,26 +21,26 @@
     <main class="main">
         <section class="main-gift">
             <div class="gift-container">
-                <h1 class="main-head">Поздравьте близкого человека с праздником!</h1>
-                <p class="gift-descriorion">Выберите открытку и получатель получит ее на свой телефон</p>
+                <h1 class="main-head">Поздравьте близкого человека с&nbsp;праздником!</h1>
+                <p class="gift-descriorion">Выберите открытку и&nbsp;получатель получит ее&nbsp;на&nbsp;свой телефон</p>
 
                 <div class="gift-wpapper">
-                    
+
                     <div class="gift-cards">
 
                         <div class="swiper gift-swiper gift-swiper-card">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide gift-cards-slide">
-                                    <img class="gift-cards-image" src="img/card-01.png" alt="card-01">
+                                    <img class="gift-cards-image" src="img/card-01.png" data-card="card-01" alt="card-01">
                                 </div>
                                 <div class="swiper-slide gift-cards-slide">
-                                    <img class="gift-cards-image" src="img/card-02.png" alt="card-02">
+                                    <img class="gift-cards-image" src="img/card-02.png" data-card="card-02" alt="card-02">
                                 </div>
                                 <div class="swiper-slide gift-cards-slide">
-                                    <img class="gift-cards-image" src="img/card-03.png" alt="card-03">
+                                    <img class="gift-cards-image" src="img/card-03.png" data-card="card-03" alt="card-03">
                                 </div>
                                 <div class="swiper-slide gift-cards-slide">
-                                    <img class="gift-cards-image" src="img/card-04.png" alt="card-04">
+                                    <img class="gift-cards-image" src="img/card-04.png" data-card="card-04" alt="card-04">
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
 
                         <label class="form-label">
                             <span class="form-text">телефон отправителя</span>
-                            <input type="text" class="form-field" name="sender-phone">
+                            <input type="text" class="form-field form-field-phone" name="sender-phone">
                         </label>
 
                         <label class="form-label">
@@ -81,13 +81,15 @@
 
                         <label class="form-label">
                             <span class="form-text">телефон получателя</span>
-                            <input type="text" class="form-field" name="receiver-phone">
+                            <input type="text" class="form-field form-field-phone" name="receiver-phone">
                         </label>
                         <label class="form-label form-label-textarea">
                             <span class="form-text">поздравительный текст</span>
                             <textarea class="form-field form-field-textarea" name="message"
                                 placeholder="Напишите теплые слова"></textarea>
                         </label>
+
+                        <input type="hidden" name="card" class="form-card">
 
                         <button type="submit" class="form-button" disabled>Отправить</button>
                     </form>
@@ -97,6 +99,8 @@
         </section>
     </main>
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 

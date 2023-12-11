@@ -21,9 +21,9 @@ body {
     line-height: 1.4;
     color: #221F1F;
 
-    max-width: 1210px;
+    max-width: 1260px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 40px;
 }
 
 .body-gift {
@@ -70,14 +70,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 30px;
+    gap: 96px;
 }
 
 .gift-cards {
     max-width: 580px;
+    /* по макету колонка 64px отступы между ними 16px,
+    чтобы ширина правого блока с картиной менялась 
+    и оставался нужный по макету отступ делаем так */
+    width: calc(50% - 16px);
 }
-
-.gift-swiper {}
 
 .gift-swiper-card {
     margin-bottom: 20px;
@@ -110,6 +112,7 @@ body {
 
 .gift-form {
     max-width: 480px;
+    width: 100%;
 }
 
 .form {
@@ -126,6 +129,7 @@ body {
 .form-text {
     display: block;
     margin-bottom: 4px;
+    white-space: nowrap;
 }
 
 .form-field {
@@ -177,4 +181,74 @@ body {
 
 .form-button:disabled {
     opacity: 0.4;
+}
+
+@media (width <=1080px) {
+
+    .header {
+        padding: 32px 0;
+    }
+
+
+    .main {
+        padding: 0 0 34px;
+    }
+
+    .main-head {
+        font-size: 28px;
+        margin: 0 0 12px;
+    }
+
+    .gift-descriorion {
+        font-size: 16px;
+        margin: 0 0 30px;
+    }
+
+    .gift-cards {
+        max-width: 464px;
+    }
+
+    .form {
+        row-gap: 12px;
+    }
+
+}
+
+@media (width <=850px) {
+
+    .gift-wpapper {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .gift-cards {
+        width: 100%;
+    }
+
+    .gift-form {
+        max-width: 100%;
+    }
+
+}
+
+@media (width <=500px) {
+
+    body {
+        padding: 0 16px;
+    }
+
+    .header {
+        padding: 24px 0 32px;
+    }
+
+
+    .main {
+        padding: 0 0 50px;
+    }
+
+    .gift-form {
+        grid-template-columns: 1fr;
+    }
+
+
 }

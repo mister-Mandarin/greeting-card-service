@@ -62,7 +62,7 @@ const getActiveSlideData = () => {
 }
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault()
+  event.preventDefault();
 
   const errors = validate(form, {
     // можно реализовать валидацию формы. Неинтеренсо. Делать не буду. 
